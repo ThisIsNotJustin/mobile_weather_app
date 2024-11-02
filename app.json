@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Expo Router Typescript",
-    "slug": "expo-router-typescript",
+    "name": "crossplatform_weather_app",
+    "slug": "crossplatformweatherapp",
     "scheme": "app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,14 +14,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": false
+      "supportsTablet": false,
+      "bundleIdentifier": "com.thisisnotjustin.crossplatformweatherapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/images/app-icon.png",
         "backgroundColor": "#222"
       },
-      "package": "com.haytherecharlie.exporoutertypescript"
+      "package": "com.thisisnotjustin.crossplatformweatherapp"
     },
     "web": {
       "favicon": "./src/assets/images/app-icon.png",
@@ -34,7 +35,11 @@
     "extra": {
       "router": {
         "origin": false
+      },
+      "eas": {
+        "projectId": "e840eb3d-cf0a-44dd-af31-46064d4675d8"
       }
-    }
+    },
+    "owner": "thisisnotjustin"
   }
 }

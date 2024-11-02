@@ -1,18 +1,38 @@
-import styled from 'styled-components/native'
-import { Stack } from 'expo-router'
-import LinkButton from 'src/components/LinkButton'
-import ScreenLayout from 'src/components/ScreenLayout'
+import React from 'react';
+import { Button} from 'react-native';
+import styled from 'styled-components/native';
+import { useRouter, Stack } from 'expo-router';
+import LinkButton from 'src/components/LinkButton';
+import ScreenLayout from 'src/components/ScreenLayout';
+import { useAuth } from '../hooks/useAuth';
 
 export default function HomeScreen() {
+  const { user, logOut } = useAuth();
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      router.replace('./auth/welcome');
+    } catch (error) {
+      console.error("Failed to log out", error);
+    }
+  };
+
   return (
     <ScreenLayout testID="home-screen-layout">
+      <Stack.Screen options={{ title: 'Home Screen' }} />
       <S.Content testID="home-screen-content">
-        <Stack.Screen options={{ title: 'Home Screen' }} />
-
         <S.Title testID="home-screen-title">🏠</S.Title>
-        <S.Text testID="home-screen-text">Go to app/index.tsx to edit</S.Text>
+        <S.Text testID="home-screen-text">Welcome to the Home Screen!</S.Text>
+        
+        {user && (
+          <S.Text testID="user-email">Logged in as: {user.email}</S.Text>
+        )}
 
         <LinkButton href="/second" text="Go To Second Screen" />
+        
+        <Button title="Logout" onPress={handleLogout} />
       </S.Content>
     </ScreenLayout>
   )

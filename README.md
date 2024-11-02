@@ -1,8 +1,8 @@
----
-
 **INTRODUCTION**
 
-Two sample screens have been created, to test Expo and Expo Router. Also a number of useful scripts have been created in the package.json that allow the ability to run, build, test, lint and serve the application.
+Two sample screens have been created, to test Expo and Expo Router.
+Also a number of useful scripts have been created in the package.json that allow the ability to run, 
+build, test, lint and serve the application.
 
 ---
 
@@ -12,6 +12,10 @@ Two sample screens have been created, to test Expo and Expo Router. Also a numbe
 
   - `app`: Folder based routing directory.
 
+  - `auth`: Folder for authentication related files.
+
+  - `navigation`: Folder for files handling navigation.
+  
   - `assets`: Images, fonts, sounds, etc.
 
   - `components`: Reusable React components.
@@ -30,7 +34,7 @@ Two sample screens have been created, to test Expo and Expo Router. Also a numbe
 
 ```bash
 # Clone Repo
-git clone git@github.com:thedevenvironment/expo-router-typescript.git
+git clone ADD REPO
 ```
 
 ```bash
@@ -41,11 +45,6 @@ npm run setup
 ```bash
 # Start The Dev Server
 npm run dev
-
-# Press 's' to switch to dev build
-# Press 'a' to open Android simulator
-# Press 'i' to open iOS simulator
-# Press 'w' to open web browser
 ```
 
 ---
