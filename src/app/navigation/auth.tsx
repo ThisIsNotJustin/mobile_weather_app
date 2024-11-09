@@ -1,5 +1,6 @@
 import React from 'react';
 import { Stack } from 'expo-router';
+import { fetchWeather } from 'services/weatherApi';
 
 export default function AuthLayout() {
   return (
@@ -12,7 +13,7 @@ export default function AuthLayout() {
       <Stack.Screen
         name="welcome"
         options={{
-          title: 'Welcome',
+          title: 'Welcome to our weather app!',
         }}
       />
       <Stack.Screen
