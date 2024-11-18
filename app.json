@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "crossplatform_weather_app",
+    "slug": "crossplatformweatherapp",
+    "scheme": "app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/app-icon.png",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "backgroundColor": "#222"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.thisisnotjustin.crossplatformweatherapp",
+      "userInterfaceStyle": "dark"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/app-icon.png",
+        "backgroundColor": "#222"
+      },
+      "package": "com.thisisnotjustin.crossplatformweatherapp"
+    },
+    "web": {
+      "favicon": "./src/assets/images/app-icon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e840eb3d-cf0a-44dd-af31-46064d4675d8"
+      }
+    },
+    "newArchEnabled": true,
+    "owner": "thisisnotjustin"
+  }
+}
