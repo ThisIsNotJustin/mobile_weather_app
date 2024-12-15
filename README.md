@@ -1,8 +1,14 @@
 **INTRODUCTION**
 
-Two sample screens have been created, to test Expo and Expo Router.
-Also a number of useful scripts have been created in the package.json that allow the ability to run, 
-build, test, lint and serve the application.
+### SimpleWeather 🌤️  
+A **cross-platform mobile weather app** built using **React Native**. SimpleWeather provides:  
+
+- **Current location weather data**: Get real-time weather updates for your current location.  
+- **City weather search**: Look up the weather conditions for any city in the world.  
+
+This app is designed for **Web**, **Android**, and **iOS**, combining modern UI/UX with the power of React Native to deliver a seamless user experience on each.  
+
+Get started today!
 
 ---
 
