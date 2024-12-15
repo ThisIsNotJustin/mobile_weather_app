@@ -11,7 +11,8 @@ This app is designed for **Web**, **Android**, and **iOS**, combining modern UI/
 Get started today!
 ---
 ### Watch the Demo!
-[![Video Link](demo/IMG_2473.jpg)](https://www.youtube.com/shorts/mccBErg2o4k)
+[<img src="demo/IMG_2473.jpg" alt="Video Link" width="250">](https://www.youtube.com/shorts/mccBErg2o4k)
+
 
 
 ---
