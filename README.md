@@ -9,6 +9,10 @@ A **cross-platform mobile weather app** built using **React Native**. SimpleWeat
 This app is designed for **Web**, **Android**, and **iOS**, combining modern UI/UX with the power of React Native to deliver a seamless user experience on each.  
 
 Get started today!
+---
+### Watch the Demo!
+[![Video Link](demo/IMG_2473.jpg)](https://www.youtube.com/shorts/mccBErg2o4k)
+
 
 ---
 
